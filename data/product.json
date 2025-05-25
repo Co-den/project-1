@@ -1,0 +1,29 @@
+{
+  "_id": "662a1b5d8f4b2a1b5d8f4b2a",
+  "name": "Wireless Bluetooth Headphones",
+  "description": "Premium noise-canceling wireless headphones with 40-hour battery life and deep bass response. Features Bluetooth 5.0 connectivity and IPX4 water resistance.",
+  "price": 199.99,
+  "image": "/images/products/3.png",
+  "category": "electronics",
+  "isFeatured": true,
+  "stock": 100,
+  "brand": {
+    "name": "SoundWave",
+    "logo": "https://example.com/logos/soundwave.png"
+  },
+  "ratings": {
+    "average": 4.5,
+    "count": 120
+  },
+  "specifications": {
+    "connectivity": "Bluetooth 5.0",
+    "batteryLife": "40 hours",
+    "waterResistant": true,
+    "weight": "0.45 kg",
+    "colorOptions": ["Black", "Silver", "Space Gray"]
+  },
+  "createdAt": "2024-04-25T09:30:00.000Z",
+  "updatedAt": "2024-04-25T14:45:00.000Z",
+  "__v": 0,
+  "priceFormatted": "$199.99"
+}
