@@ -15,10 +15,22 @@ const app = express();
 app.use(express.json());
 // server.js
 
+const allowedOrigins = [
+  'http://localhost:5173',              // local dev
+  'https://agriify.netlify.app',        // your Netlify site
+];
+
 app.use(cors({
-  origin: 'http://localhost:5173', // Your React dev server port
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  credentials: true
+  origin: function (origin, callback) {
+    // allow requests with no origin (like mobile apps or curl)
+    if (!origin) return callback(null, true);
+    if (allowedOrigins.includes(origin)) {
+      return callback(null, true);
+    } else {
+      return callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true,
 }));
 connectDB();
 // Serve static images
