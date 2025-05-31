@@ -17,7 +17,8 @@ app.use(express.json());
 
 const allowedOrigins = [
   'http://localhost:5173',              // local dev
-  'https://agriify.netlify.app',        // your Netlify site
+  'https://agriify.netlify.app', 
+  'https://agrific.netlify.app'
 ];
 
 app.use(cors({
