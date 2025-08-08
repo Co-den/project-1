@@ -9,16 +9,30 @@ const productRoute = require("./routes/products");
 const orderRoute = require("./routes/orders");
 const adminRoute = require("./routes/admin");
 const paymentRoute = require("./routes/payment");
+const aiRoute = require("./routes/aiRoute");
 
 
 const app = express();
 app.use(express.json());
 // server.js
 
+const allowedOrigins = [
+  'http://localhost:5173',              // local dev
+  'https://agriify.netlify.app', 
+  'https://agrific.netlify.app'
+];
+
 app.use(cors({
-  origin: 'http://localhost:5173', // Your React dev server port
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  credentials: true
+  origin: function (origin, callback) {
+    // allow requests with no origin (like mobile apps or curl)
+    if (!origin) return callback(null, true);
+    if (allowedOrigins.includes(origin)) {
+      return callback(null, true);
+    } else {
+      return callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true,
 }));
 connectDB();
 // Serve static images
@@ -29,6 +43,8 @@ app.use("/api/products", productRoute);
 app.use("/api/orders", orderRoute);
 app.use("/api/admin", adminRoute);
 app.use("/api/payment", paymentRoute);
+// AI Route
+app.use("/api/ai", aiRoute);
 
 // Add security middleware for image serving
 app.use("/api/images", (req, res, next) => {
