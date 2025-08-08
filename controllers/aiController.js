@@ -1,19 +1,19 @@
 const dotenv = require("dotenv");
 dotenv.config({ path: "./config.env" });
-const { TextServiceClient } = require("@google-ai/generativelanguage");
+const { GoogleGenAI } = require("@google/genai");
 
 // Instantiate the client with your API key
-const client = new TextServiceClient({
+const client = new GoogleGenAI({
   apiKey: process.env.GEMINI_API_KEY
 });
 
 // Helper to call Gemini with a prompt
 async function callGemini(prompt) {
-  const res = await client.generateText({
-    model: "models/chat-bison-001",
+  const res = await client.models.generateContent({
+    model: "gemini-2.5-flash",
     prompt: { text: prompt }
   });
-
+console.log("Gemini response:", res);
   // unwrap the candidate
   return res.data?.candidates?.[0]?.output || "";
 }
