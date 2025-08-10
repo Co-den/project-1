@@ -8,15 +8,14 @@ const client = new GoogleGenAI({
 });
 
 // Helper to call Gemini with a prompt
-async function callGemini(prompt) {
-  const res = await client.models.generateContent({
-    model: "gemini-2.5-flash",
-    prompt: { text: prompt }
+const callGemini = async (prompt) => {
+  const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+  const result = await model.generateContent({
+    contents: [{ role: "user", parts: [{ text: prompt }] }]
   });
-console.log("Gemini response:", res);
-  // unwrap the candidate
-  return res.data?.candidates?.[0]?.output || "";
-}
+  return result.response.text();
+};
+
 
 exports.aiAssistant = async (req, res) => {
   const { question, productData } = req.body;

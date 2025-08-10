@@ -10,6 +10,7 @@ const orderRoute = require("./routes/orders");
 const adminRoute = require("./routes/admin");
 const paymentRoute = require("./routes/payment");
 const aiRoute = require("./routes/aiRoute");
+const bookingRoute = require("./routes/booking");
 
 
 const app = express();
@@ -40,6 +41,7 @@ app.use("/images", express.static("public/images"));
 
 app.use("/api/auth", authRoute);
 app.use("/api/products", productRoute);
+app.use("/api/booking", bookingRoute);
 app.use("/api/orders", orderRoute);
 app.use("/api/admin", adminRoute);
 app.use("/api/payment", paymentRoute);
