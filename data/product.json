@@ -1,171 +1,146 @@
-[{
-  "_id": {
-    "$oid": "662a1b5d8f4b2a1b5d8f4b2a"
+[
+  {
+    "_id": "662a1b5d8f4b2a1b5d8f4b2a",
+    "name": "Fresh Organic Eggs",
+    "description": "Enjoy farm-fresh, organic eggs packed with rich nutrients and unmatched flavor. Our eggs come from healthy, free-range hens raised without antibiotics or hormones. Perfect for your breakfast table, baking needs, or protein-packed meals.",
+    "price": 3,
+    "image": "/images/products/egg.jpg",
+    "category": {
+      "name": "eggs",
+      "images": "/images/categories/egg.jpg"
+    },
+    "isFeatured": true,
+    "stock": 500,
+    "createdAt": "2024-04-25T09:30:00.000Z",
+    "updatedAt": "2024-04-25T09:30:00.000Z",
+    "__v": 0
   },
-  "name": "Fresh Organic Eggs",
-  "description": "Enjoy farm-fresh, organic eggs packed with rich nutrients and unmatched flavor. Our eggs come from healthy, free-range hens raised without antibiotics or hormones. Perfect for your breakfast table, baking needs, or protein-packed meals.",
-  "price": 3,
-  "image": "/images/products/egg.jpg",
-  "category": "eggs",
-  "isFeatured": true,
-  "stock": 500,
-  "createdAt": {
-    "$date": "2024-04-25T09:30:00.000Z"
+  {
+    "_id": "6826f4e0de457561a5e54151",
+    "name": "Healthy Farm-Raised Broilers\n\n",
+    "description": "Tender, juicy, and naturally grown—our broilers are raised with care on a well-managed farm. Free from harmful chemicals and fed a balanced diet, they offer premium quality meat for your home or business. Ideal for grilling, roasting, or stewing.",
+    "price": 17,
+    "image": "/images/products/c2.jpg",
+    "category": {
+      "name": "chickens",
+      "images":"/images/categories/chicken.jpg"
+    },
+    "isFeatured": true,
+    "stock": 500,
+    "createdAt": "2024-04-25T09:30:00.000Z",
+    "updatedAt": "2024-04-25T09:30:00.000Z",
+    "__v": 0
   },
-  "updatedAt": {
-    "$date": "2024-04-25T09:30:00.000Z"
+  {
+    "_id": "6826f4e4de457561a5e54152",
+    "name": "Healthy Farm-Raised Broilers\n\n",
+    "description": "Tender, juicy, and naturally grown—our broilers are raised with care on a well-managed farm. Free from harmful chemicals and fed a balanced diet, they offer premium quality meat for your home or business. Ideal for grilling, roasting, or stewing.",
+    "price": 20,
+    "image": "/images/products/c1.webp",
+    "category": {
+      "name": "chickens",
+      "images": "/images/categories/chicken.jpg"
+    },
+    "isFeatured": true,
+    "stock": 500,
+    "createdAt": "2024-04-25T09:30:00.000Z",
+    "updatedAt": "2024-04-25T09:30:00.000Z",
+    "__v": 0
   },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6826f4e0de457561a5e54151"
+  {
+    "_id": "6827ce8097bfe4ece39446d7",
+    "name": "Cracked/Industrial Eggs (For Processing)",
+    "description": "These industrial-grade eggs are ideal for baking factories, feed mills, and food processors. Though not suited for table use, they retain their protein-rich content and are cost-effective for commercial use in non-retail settings.",
+    "price": 3,
+    "image": "/images/products/I1.jpg",
+    "category": {
+      "name": "eggs",
+      "images": "/images/categories/egg.jpg"
+    },
+    "isFeatured": true,
+    "stock": 500,
+    "createdAt": "2024-04-25T09:30:00.000Z",
+    "updatedAt": "2024-04-25T09:30:00.000Z",
+    "__v": 0
   },
-  "name": "Healthy Farm-Raised Broilers\n\n",
-  "description": "Tender, juicy, and naturally grown—our broilers are raised with care on a well-managed farm. Free from harmful chemicals and fed a balanced diet, they offer premium quality meat for your home or business. Ideal for grilling, roasting, or stewing.",
-  "price": 17,
-  "image": "/images/products/c2.jpg",
-  "category": "chickens",
-  "isFeatured": true,
-  "stock": 500,
-  "createdAt": {
-    "$date": "2024-04-25T09:30:00.000Z"
+  {
+    "_id": "6827ce8497bfe4ece39446d8",
+    "name": "Jumbo-Sized Table Eggs",
+    "description": "For those who want more with every crack, our jumbo eggs are extra-large and protein-rich. Perfect for hearty meals, bulk cooking, or customers who prefer value in size without compromising freshness and quality.\n",
+    "price": 3,
+    "image": "/images/products/egg.jpg",
+    "category": {
+      "name": "eggs",
+      "images": "/images/categories/egg.jpg"
+    },
+    "isFeatured": true,
+    "stock": 500,
+    "createdAt": "2024-04-25T09:30:00.000Z",
+    "updatedAt": "2024-04-25T09:30:00.000Z",
+    "__v": 0
   },
-  "updatedAt": {
-    "$date": "2024-04-25T09:30:00.000Z"
+  {
+    "_id": "6827ce8797bfe4ece39446d9",
+    "name": "Organic Free-Range Eggs",
+    "description": "Collected from hens raised on organic feed and open pastures, these eggs offer superior taste and nutritional value. Rich in omega-3 fatty acids, vitamins, and minerals—our organic eggs are a healthy choice for health-conscious customers.",
+    "price": 3,
+    "image": "/images/products/o.webp",
+    "category": {
+      "name": "eggs",
+      "images": "/images/categories/egg.jpg"
+    },
+    "isFeatured": true,
+    "stock": 500,
+    "createdAt": "2024-04-25T09:30:00.000Z",
+    "updatedAt": "2024-04-25T09:30:00.000Z",
+    "__v": 0
   },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6826f4e4de457561a5e54152"
+  {
+    "_id": "6827ce8b97bfe4ece39446da",
+    "name": "Fertile Hatching Eggs",
+    "description": "These fertile eggs are sourced from strong, disease-free parent stock and are ideal for incubators or natural brooding. With a high hatch rate and excellent genetic quality, they are perfect for poultry farmers looking to expand their flocks.",
+    "price": 3,
+    "image": "/images/products/f.jpg",
+    "category": {
+      "name": "eggs",
+      "images": "/images/categories/egg.jpg"
+    },
+    "isFeatured": true,
+    "stock": 500,
+    "createdAt": "2024-04-25T09:30:00.000Z",
+    "updatedAt": "2024-04-25T09:30:00.000Z",
+    "__v": 0
   },
-  "name": "Healthy Farm-Raised Broilers\n\n",
-  "description": "Tender, juicy, and naturally grown—our broilers are raised with care on a well-managed farm. Free from harmful chemicals and fed a balanced diet, they offer premium quality meat for your home or business. Ideal for grilling, roasting, or stewing.",
-  "price": 20,
-  "image": "/images/products/c1.webp",
-  "category": "chickens",
-  "isFeatured": true,
-  "stock": 500,
-  "createdAt": {
-    "$date": "2024-04-25T09:30:00.000Z"
+  {
+    "_id": "6827ce8e97bfe4ece39446db",
+    "name": " Fresh Table Eggs – White/Brown",
+    "description": "Our premium table eggs are freshly collected from healthy layers and carefully sorted for uniformity and cleanliness. Ideal for everyday consumption, baking, and cooking, these eggs come in both white and brown shells and are packed with natural protein and essential nutrients.",
+    "price": 3,
+    "image": "/images/products/fr.jpg",
+    "category": {
+      "name": "eggs",
+      "images": "/images/categories/egg.jpg"
+    },
+    "isFeatured": true,
+    "stock": 500,
+    "createdAt": "2024-04-25T09:30:00.000Z",
+    "updatedAt": "2024-04-25T09:30:00.000Z",
+    "__v": 0
   },
-  "updatedAt": {
-    "$date": "2024-04-25T09:30:00.000Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6827ce8097bfe4ece39446d7"
-  },
-  "name": "Cracked/Industrial Eggs (For Processing)",
-  "description": "These industrial-grade eggs are ideal for baking factories, feed mills, and food processors. Though not suited for table use, they retain their protein-rich content and are cost-effective for commercial use in non-retail settings.",
-  "price": 3,
-  "image": "/images/products/I1.jpg",
-  "category": "eggs",
-  "isFeatured": true,
-  "stock": 500,
-  "createdAt": {
-    "$date": "2024-04-25T09:30:00.000Z"
-  },
-  "updatedAt": {
-    "$date": "2024-04-25T09:30:00.000Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6827ce8497bfe4ece39446d8"
-  },
-  "name": "Jumbo-Sized Table Eggs",
-  "description": "For those who want more with every crack, our jumbo eggs are extra-large and protein-rich. Perfect for hearty meals, bulk cooking, or customers who prefer value in size without compromising freshness and quality.\n",
-  "price": 3,
-  "image": "/images/products/egg.jpg",
-  "category": "eggs",
-  "isFeatured": true,
-  "stock": 500,
-  "createdAt": {
-    "$date": "2024-04-25T09:30:00.000Z"
-  },
-  "updatedAt": {
-    "$date": "2024-04-25T09:30:00.000Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6827ce8797bfe4ece39446d9"
-  },
-  "name": "Organic Free-Range Eggs",
-  "description": "Collected from hens raised on organic feed and open pastures, these eggs offer superior taste and nutritional value. Rich in omega-3 fatty acids, vitamins, and minerals—our organic eggs are a healthy choice for health-conscious customers.",
-  "price": 3,
-  "image": "/images/products/o.webp",
-  "category": "eggs",
-  "isFeatured": true,
-  "stock": 500,
-  "createdAt": {
-    "$date": "2024-04-25T09:30:00.000Z"
-  },
-  "updatedAt": {
-    "$date": "2024-04-25T09:30:00.000Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6827ce8b97bfe4ece39446da"
-  },
-  "name": "Fertile Hatching Eggs",
-  "description": "These fertile eggs are sourced from strong, disease-free parent stock and are ideal for incubators or natural brooding. With a high hatch rate and excellent genetic quality, they are perfect for poultry farmers looking to expand their flocks.",
-  "price": 3,
-  "image": "/images/products/f.jpg",
-  "category": "eggs",
-  "isFeatured": true,
-  "stock": 500,
-  "createdAt": {
-    "$date": "2024-04-25T09:30:00.000Z"
-  },
-  "updatedAt": {
-    "$date": "2024-04-25T09:30:00.000Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6827ce8e97bfe4ece39446db"
-  },
-  "name": " Fresh Table Eggs – White/Brown",
-  "description": "Our premium table eggs are freshly collected from healthy layers and carefully sorted for uniformity and cleanliness. Ideal for everyday consumption, baking, and cooking, these eggs come in both white and brown shells and are packed with natural protein and essential nutrients.",
-  "price": 3,
-  "image": "/images/products/fr.jpg",
-  "category": "eggs",
-  "isFeatured": true,
-  "stock": 500,
-  "createdAt": {
-    "$date": "2024-04-25T09:30:00.000Z"
-  },
-  "updatedAt": {
-    "$date": "2024-04-25T09:30:00.000Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6827ce9297bfe4ece39446dc"
-  },
-  "name": " Durable Poultry Cage for Layers & Broilers",
-  "description": "Our high-quality poultry cage is designed for maximum comfort, hygiene, and productivity. Built with rust-resistant metal and an easy-clean design, it's perfect for both layers and broilers. The cage features optimal ventilation, secure latches, and efficient feed/water access—ideal for small farms or large-scale poultry operations.",
-  "price": 120,
-  "image": "/images/products/e2.jpg",
-  "category": "equipment",
-  "isFeatured": false,
-  "stock": 500,
-  "createdAt": {
-    "$date": "2024-04-25T09:30:00.000Z"
-  },
-  "updatedAt": {
-    "$date": "2024-04-25T09:30:00.000Z"
-  },
-  "__v": 0
-}]
+  {
+    "_id": "6827ce9297bfe4ece39446dc",
+    "name": " Durable Poultry Cage for Layers & Broilers",
+    "description": "Our high-quality poultry cage is designed for maximum comfort, hygiene, and productivity. Built with rust-resistant metal and an easy-clean design, it's perfect for both layers and broilers. The cage features optimal ventilation, secure latches, and efficient feed/water access—ideal for small farms or large-scale poultry operations.",
+    "price": 120,
+    "image": "/images/products/e2.jpg",
+    "category": {
+      "name": "equipment",
+      "images": "/images/categories/equip.jpg"
+    },
+    "isFeatured": false,
+    "stock": 500,
+    "createdAt": "2024-04-25T09:30:00.000Z",
+    "updatedAt": "2024-04-25T09:30:00.000Z",
+    "__v": 0
+  }
+]

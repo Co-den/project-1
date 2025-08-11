@@ -28,12 +28,8 @@ const ProductSchema = new mongoose.Schema(
       required: true,
     },
     category: {
-      type: String,
-      required: true,
-      enum: {
-        values: ["eggs", "chick", "broilers", "old layers", "feed"],
-        message: "{VALUE} is not a valid category",
-      },
+      name: { type: String, required: true },
+      images: { type: String },
     },
     isFeatured: {
       type: Boolean,
