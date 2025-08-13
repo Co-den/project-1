@@ -142,5 +142,21 @@
     "createdAt": "2024-04-25T09:30:00.000Z",
     "updatedAt": "2024-04-25T09:30:00.000Z",
     "__v": 0
+  },
+  {
+    "_id": "6927ce9597bfe4ece39446dd",
+    "name": " Day old Feed",
+    "description": "Our high-quality day-old feed is specially formulated to meet the nutritional needs of young chicks. Packed with essential vitamins and minerals, it promotes healthy growth and development during the critical early stages of life.",
+    "price": 120,
+    "image": "/images/products/feed.jpg",
+    "category": {
+      "name": "feed",
+      "images": "/images/categories/feed.jpg"
+    },
+    "isFeatured": false,
+    "stock": 500,
+    "createdAt": "2024-04-25T09:30:00.000Z",
+    "updatedAt": "2024-04-25T09:30:00.000Z",
+    "__v": 0
   }
 ]
