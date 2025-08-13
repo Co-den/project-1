@@ -2,16 +2,15 @@ const dotenv = require("dotenv");
 dotenv.config({ path: "./config.env" });
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
-// Instantiate the client with your API key
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
-// Helper to call Gemini with a prompt
 const callGemini = async (prompt) => {
   const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
   const result = await model.generateContent(prompt);
 
   if (!result || !result.response) {
+    console.error("Gemini API returned no response:", result);
     throw new Error("No response from Gemini API");
   }
 
@@ -25,7 +24,9 @@ exports.aiAssistant = async (req, res) => {
   }
 
   const prompt = `
-You are a concise, friendly e-commerce assistant. Answer the user's question using only the information from the product below when possible. If the information is not present, say you don't know and suggest what the user can check.
+You are a concise, friendly e-commerce assistant. 
+Answer the user's question using only the information from the product below when possible. 
+If the information is not present, say you don't know and suggest what the user can check.
 
 Product JSON:
 ${JSON.stringify(productData, null, 2)}
@@ -33,7 +34,7 @@ ${JSON.stringify(productData, null, 2)}
 User question:
 ${question}
 
-Keep the answer short (1-3 sentences).
+Keep the answer short (1–3 sentences).
   `;
 
   try {
@@ -41,9 +42,10 @@ Keep the answer short (1-3 sentences).
     res.json({ answer: text.trim() });
   } catch (err) {
     console.error("Gemini ask error:", err);
-    res.status(500).json({ error: "AI request failed" });
+    res.status(500).json({ answer: "AI request failed" });
   }
 };
+
 
 exports.suggestions = async (req, res) => {
   const { product } = req.body;
