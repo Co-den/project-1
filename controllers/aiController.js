@@ -1,21 +1,22 @@
 const dotenv = require("dotenv");
 dotenv.config({ path: "./config.env" });
-const { GoogleGenAI } = require("@google/genai");
+const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 // Instantiate the client with your API key
-const client = new GoogleGenAI({
-  apiKey: process.env.GEMINI_API_KEY
-});
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 // Helper to call Gemini with a prompt
 const callGemini = async (prompt) => {
-  const model = genAI.getGenerativeModel({ model: "gemini-pro" });
-  const result = await model.generateContent({
-    contents: [{ role: "user", parts: [{ text: prompt }] }]
-  });
+  const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
+
+  const result = await model.generateContent(prompt);
+
+  if (!result || !result.response) {
+    throw new Error("No response from Gemini API");
+  }
+
   return result.response.text();
 };
-
 
 exports.aiAssistant = async (req, res) => {
   const { question, productData } = req.body;
@@ -61,7 +62,6 @@ ${JSON.stringify(product, null, 2)}
   try {
     const raw = await callGemini(prompt);
 
-    // Parse JSON array or fallback to line splitting
     let suggestions;
     try {
       suggestions = JSON.parse(raw);
