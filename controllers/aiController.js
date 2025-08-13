@@ -5,17 +5,30 @@ const { GoogleGenerativeAI } = require("@google/generative-ai");
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 const callGemini = async (prompt) => {
-  const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
+  try {
+    const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
-  const result = await model.generateContent(prompt);
+    const result = await model.generateContent(prompt);
 
-  if (!result || !result.response) {
-    console.error("Gemini API returned no response:", result);
-    throw new Error("No response from Gemini API");
+    if (!result || !result.response) {
+      console.error("Gemini API returned no response:", result);
+      throw new Error("No response from Gemini API");
+    }
+
+    const text = result.response.text ? result.response.text() : 
+      result.response.candidates?.[0]?.content?.parts?.[0]?.text;
+
+    if (!text) {
+      throw new Error("No text found in Gemini response");
+    }
+
+    return text;
+  } catch (err) {
+    console.error("Gemini API call failed:", err);
+    throw err;
   }
-
-  return result.response.text();
 };
+
 
 exports.aiAssistant = async (req, res) => {
   const { question, productData } = req.body;
