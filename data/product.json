@@ -143,6 +143,22 @@
     "updatedAt": "2024-04-25T09:30:00.000Z",
     "__v": 0
   },
+   {
+    "_id": "6827ce9297bfe4ece39446dc",
+    "name": " Durable Poultry Cage for Layers & Broilers",
+    "description": "Our high-quality poultry cage is designed for maximum comfort, hygiene, and productivity. Built with rust-resistant metal and an easy-clean design, it's perfect for both layers and broilers. The cage features optimal ventilation, secure latches, and efficient feed/water access—ideal for small farms or large-scale poultry operations.",
+    "price": 120,
+    "image": "/images/products/e1.jpg",
+    "category": {
+      "name": "equipment",
+      "images": "/images/categories/equip.jpg"
+    },
+    "isFeatured": false,
+    "stock": 500,
+    "createdAt": "2024-04-25T09:30:00.000Z",
+    "updatedAt": "2024-04-25T09:30:00.000Z",
+    "__v": 0
+  },
   {
     "_id": "6927ce9597bfe4ece39446dd",
     "name": " Day old Feed",
